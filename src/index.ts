@@ -1,25 +1,25 @@
-import { Sorter } from './Sorter';
-// import { CharacterCollection } from './CharacterCollection';
-// import { NumbersCollection } from './NumbersCollection';
+import { NumbersCollection } from './NumbersCollection';
 import { LinkedList } from './LinkedList';
+import { CharacterCollection } from './CharacterCollection';
 
-// const numbers = new CharacterCollection('sina');
-// const sort = new Sorter(numbers);
+// const numbers = new NumbersCollection([10, 21, 0, 20, -1]);
 
-// console.log(sort);
+// console.log(numbers.data);
+// numbers.sort();
+// console.log(numbers.data);
 
-// sort.sort();
+// const linkedList = new LinkedList();
 
-// console.log(sort);
+// linkedList.add(50);
+// linkedList.add(10);
+// linkedList.add(140);
 
-const linkedList = new LinkedList();
+// linkedList.print();
+// linkedList.sort();
+// linkedList.print();
 
-linkedList.add(300);
-linkedList.add(200);
-linkedList.add(500);
+const characters = new CharacterCollection('zhello');
 
-const sort = new Sorter(linkedList);
-
-sort.sort();
-
-linkedList.print();
+console.log(characters.data);
+characters.sort();
+console.log(characters.data);
